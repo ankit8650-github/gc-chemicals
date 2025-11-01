@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GC Chemicals</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo.png" rel="icon" />
+    <link href="assets/img/logo.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+        /*--------------------------------------------------------------
+# Service Details Section
+--------------------------------------------------------------*/
+        .service-details .service-sidebar {
+            position: sticky;
+            top: 120px;
+        }
+
+        .service-details .service-sidebar .service-overview-card,
+        .service-details .service-sidebar .quick-info-card,
+        .service-details .service-sidebar .contact-action-card {
+            background-color: var(--accent-color-color);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
+        }
+
+        .service-details .service-sidebar .service-overview-card {
+            text-align: center;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg,
+                    var(--accent-color),
+                    color-mix(in srgb, var(--accent-color), black 20%));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-icon i {
+            font-size: 2rem;
+            color: var(--contrast-color);
+        }
+
+        .service-details .service-sidebar .service-overview-card h3 {
+            color: var(--heading-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .service-details .service-sidebar .service-overview-card p {
+            color: var(--default-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-stats .stat-item {
+            text-align: center;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-stats .stat-item .stat-number {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+
+        .service-details .service-sidebar .service-overview-card .service-stats .stat-item .stat-label {
+            font-size: 0.85rem;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+            margin-top: 0.5rem;
+        }
+
+        .service-details .service-sidebar .quick-info-card h4 {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .service-sidebar .quick-info-card .info-grid .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+        }
+
+        .service-details .service-sidebar .quick-info-card .info-grid .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .service-details .service-sidebar .quick-info-card .info-grid .info-row .label {
+            color: var(--default-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .service-details .service-sidebar .quick-info-card .info-grid .info-row .value {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card h4 {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-text {
+            color: var(--default-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            background-color: color-mix(in srgb,
+                    var(--accent-color),
+                    transparent 95%);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn i {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn span {
+            color: var(--default-color);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn:hover i,
+        .service-details .service-sidebar .contact-action-card .contact-methods .contact-btn:hover span {
+            color: var(--contrast-color);
+        }
+
+        .service-details .service-sidebar .contact-action-card .btn {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--contrast-color);
+            font-weight: 600;
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .service-details .service-sidebar .contact-action-card .btn:hover {
+            background-color: color-mix(in srgb, var(--accent-color), black 15%);
+            border-color: color-mix(in srgb, var(--accent-color), black 15%);
+            transform: translateY(-2px);
+        }
+
+        .service-details .service-main-content .hero-section {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .service-details .service-main-content .hero-section img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .service-details .service-main-content .hero-section .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.3),
+                    rgba(0, 0, 0, 0.1));
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+        }
+
+        .service-details .service-main-content .hero-section .hero-overlay .hero-badge {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+        }
+
+        .service-details .service-main-content .hero-section .hero-overlay .hero-badge i {
+            font-size: 1.1rem;
+        }
+
+        .service-details .service-main-content .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .service-details .service-main-content .content-section h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .service-details .service-main-content .content-section .content-intro p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--default-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .service-main-content .content-section .content-intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-details .service-main-content .capabilities-grid {
+            margin-bottom: 4rem;
+        }
+
+        .service-details .service-main-content .capabilities-grid h2 {
+            color: var(--heading-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card {
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            height: 100%;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
+            transition: all 0.3s ease;
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card .capability-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg,
+                    var(--accent-color),
+                    color-mix(in srgb, var(--accent-color), black 20%));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card .capability-icon i {
+            font-size: 1.8rem;
+            color: var(--contrast-color);
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card h4 {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-details .service-main-content .capabilities-grid .capability-card p {
+            color: var(--default-color);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .service-details .service-main-content .methodology-section h2 {
+            color: var(--heading-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline {
+            position: relative;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline::before {
+            content: "";
+            position: absolute;
+            left: 40px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom,
+                    var(--accent-color),
+                    color-mix(in srgb, var(--accent-color), transparent 50%));
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item {
+            position: relative;
+            padding-left: 120px;
+            margin-bottom: 3rem;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-marker {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg,
+                    var(--accent-color),
+                    color-mix(in srgb, var(--accent-color), black 20%));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-marker .phase-number {
+            color: var(--contrast-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content {
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content h4 {
+            color: var(--heading-color);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content p {
+            color: var(--default-color);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content .phase-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content .phase-features li {
+            color: var(--default-color);
+            font-size: 0.95rem;
+            padding: 0.4rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-content .phase-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .service-details .portfolio-showcase .showcase-header {
+            margin-bottom: 2rem;
+        }
+
+        .service-details .portfolio-showcase .showcase-header h2 {
+            color: var(--heading-color);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .service-details .portfolio-showcase .showcase-header p {
+            color: var(--default-color);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image {
+            position: relative;
+            height: 100%;
+            min-height: 250px;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.4));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info {
+            text-align: center;
+            color: var(--contrast-color);
+            padding: 1.5rem;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info .view-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info .view-btn i {
+            font-size: 1.2rem;
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item .project-image .project-overlay .project-info .view-btn:hover {
+            background-color: color-mix(in srgb, var(--accent-color), white 20%);
+            transform: scale(1.1);
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .service-details .portfolio-showcase .project-showcase-item:hover .project-image .project-overlay {
+            opacity: 1;
+        }
+
+        @media (max-width: 992px) {
+            .service-details .service-sidebar {
+                position: static;
+                margin-top: 3rem;
+            }
+
+            .service-details .service-main-content .content-section h1 {
+                font-size: 2rem;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline::before {
+                left: 30px;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item {
+                padding-left: 100px;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-marker {
+                width: 60px;
+                height: 60px;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-marker .phase-number {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-details .service-sidebar .contact-action-card .contact-methods {
+                grid-template-columns: 1fr;
+            }
+
+            .service-details .service-main-content .hero-section img {
+                height: 250px;
+            }
+
+            .service-details .service-main-content .hero-section .hero-overlay {
+                padding: 1.5rem;
+            }
+
+            .service-details .service-main-content .capabilities-grid .row {
+                --bs-gutter-y: 2rem;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline::before {
+                display: none;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .service-details .service-main-content .methodology-section .methodology-timeline .timeline-item .timeline-marker {
+                position: relative;
+                margin: 0 auto 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="project-details-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid position-relative d-flex align-items-center">
+            <a href="index" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <img src="assets/img/logo.png" alt="" />
+                <h1 class="sitename">GC Chemicals</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index" class="active">Home</a></li>
+                    <li><a href="about">About</a></li>
+                    <li class="dropdown"><a href="#"><span>Products</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li class="dropdown"><a href="#"><span>Adhesive Tiles Solution</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="t1-grey.html"> ECOFIX TILES ADHESIVE</a></li>
+                                    <li><a href="t2-grey.html"> UNIFIX TILES ADHESIVE</a></li>
+                                    <li><a href="t3-grey.html"> MULTIFIX TILES ADHESIVE</a></li>
+                                    <li><a href="t4-white.html"> MARBOFIX TILES ADHESIVE</a></li>
+                                    <li><a href="t5-grey.html"> EXTIROFIX TILES ADHESIVE</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><span>Tiles Grout</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="cement-based-grouting.html"> CEMENT BASED GROUTING </a></li>
+                                    <li><a href="epoxy-based-grouting.html"> EPOXY BASED GROUTING </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cement-bonder.html">Cement Bonder</a></li>
+                            <li><a href="tiles-cleaner.html">Tiles Cleaners</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services">Services</a></li>
+                    <!-- <li><a href="products">Products</a></li> -->
+                    <!-- <li><a href="team">Team</a></li> -->
+                    <li class="dropdown"><a href="#"><span>More Pages</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="terms">Terms</a></li>
+                            <li><a href="privacy">Privacy</a></li>
+                            <li><a href="404">404</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <a class="btn-getstarted d-none d-sm-block" href="quote">Request Quote</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade"
+            style="background-image: url(assets/img/portfolio/gallery2.jpg)">
+            <div class="container position-relative">
+                <h1>Product Details</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current">Product Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <!-- Project Details Section -->
+        <section id="service-details" class="service-details section">
+            <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="service-main-content">
+                            <!-- Hero Section -->
+                            <div class="hero-section aos-init aos-animate" data-aos="zoom-in" data-aos-delay="150">
+                                <img src="assets/img/product-range/011.png" style="height: 100% !important"
+                                    alt="GC EXTIRIOFIX T5 GREY" class="img-fluid p-2" />
+                                <div class="hero-overlay">
+                                    <div class="hero-badge">
+                                        <i class="bi bi-award"></i>
+                                        <span>Licensed &amp; Insured</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Description Section -->
+                            <div class="content-section aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                <h1>GC GROUT ADMIXTURE CEMENT BASED JOINT FILLER</h1>
+                                <div class="content-intro">
+                                    <p>
+                                        GC GROUT MIX WHITE, POLYMER EMULSION TO BE ADDED IN GC WATER RETENTION TILE
+                                        GROUT TO ENHANCE THE PERFORMANCE PROPERTIES AND DURABILITY OF THE TILE GROUT.
+                                        ADDITION OF GC GROUT MIX WITH GC TILES GROUT HELPS TO IMPART MORE FLEXIBILITY,
+                                        STRENGTH, WATER & STAIN RESISTANCE, ABRASION RESISTANCE AND TO FILL WIDER JOINTS
+                                        BETWEEN TILE AND STONE.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Application & Usage Guidelines -->
+                            <div class="methodology-section aos-init aos-animate" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <h2>Application & Usage Guidelines</h2>
+                                <div class="methodology-timeline">
+                                    <!-- Step 1 -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <span class="phase-number">1</span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Area of Applications</h4>
+                                            <ul class="phase-features">
+                                                <li>Floor and walls.</li>
+                                                <li>Internal & external area.</li>
+                                                <li>Domestic applications.</li>
+                                                <li>Commercial applications with wider tile joints up to 6 mm.</li>
+                                                <li>Ceramic tile, vitreous, semi-vitreous tile, glass mosaic tiles,
+                                                    terrazzo, brick, marble, natural stone and agglomerate stone
+                                                    installation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2 -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <span class="phase-number">2</span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Precautions</h4>
+                                            <ul class="phase-features">
+                                                <li>Do not apply on wet/damp tile joints. Always apply on completely dry
+                                                    tile joints.</li>
+                                                <li>Do not over-mix the material. Over-mixing can reduce the pot life.
+                                                </li>
+                                                <li>Do not allow grout to harden on the face of the tile. Clean
+                                                    promptly.</li>
+                                                <li>While cleaning, change the water frequently. Change cleaning
+                                                    cloth/sponge when they are impregnated with grout.</li>
+                                                <li>Do not allow water to flow/run into un-grouted joints while
+                                                    application.</li>
+                                                <li>Protect from direct rainfall/foot traffic for at least 24 hours.
+                                                </li>
+                                                <li>In case of grouting natural stones, it is necessary to execute a
+                                                    preliminary test, in order to verify the absorption of colour by the
+                                                    stone slabs. To avoid this problem, mask the tiles before grouting.
+                                                    A sealer or grout release may be required.</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 3 -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <span class="phase-number">3</span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>Application Instructions</h4>
+                                            <ul class="phase-features">
+                                                <li>Ensure 24 hours time interval for grouting after tile fixing.</li>
+                                                <li>The joints must be dry, clean, free of dust & adhesive.</li>
+                                                <li>Emptied at least 2/3 of the tile thickness depth.</li>
+                                                <li>Before grouting, make sure that the adhesive has set and released
+                                                    most of its moisture.</li>
+                                                <li>The joints should not be wet during work.</li>
+                                                <li>Put masking tape by the side of the grouting space or sealer if
+                                                    necessary.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Step 5 -->
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker">
+                                            <span class="phase-number">4</span>
+                                        </div>
+                                        <div class="timeline-content">
+                                            <h4>How to Mixing</h4>
+                                            <ul class="phase-features">
+                                                <li>Add GC Grout to GC Grout Admixed proper amount and mix it with a
+                                                    slow speed mixer or by hand thoroughly.</li>
+                                                <li>Avoid entraining air by mixing at very high speed or by over-mixing.
+                                                </li>
+                                                <li>Dampen tile surface with water. Spread with a sharp, firm rubber
+                                                    grout float.</li>
+                                                <li>Make sure that uniform colour & lumps-free consistency is achieved.
+                                                </li>
+                                                <li>Use the paste within 60 minutes from mixing.</li>
+                                            </ul>
+                                            <p class="small text-muted mt-2">
+                                                <strong>Note:</strong> The information supplied in this datasheet is
+                                                based upon extensive experience and is given in good faith
+                                                in order to help you. Our Company policy is one of continuous Research
+                                                and Development we therefore
+                                                reserve the right to update this information at any time without prior
+                                                notice. We also guarantee the consistent
+                                                high quality of our products however as we have no control over site
+                                                conditions or the execution of the work,
+                                                we accept no liability for any loss or damage which may arise as a
+                                                result thereof.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Service Main Content -->
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-4">
+                        <div class="service-sidebar aos-init aos-animate" data-aos="fade-left" data-aos-delay="200">
+                            <div class="service-overview-card">
+                                <div class="service-icon">
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h3>Features</h3>
+                                <ul style="text-align: left !important">
+                                    <li>Easy to use & clean.</li>
+                                    <li>Easy maintenance.</li>
+                                    <li>Polymer emulsion.</li>
+                                    <li>Weather resistant.</li>
+                                    <li>Non-cracking & Non-shrink.</li>
+                                    <li>Improves flexibility and durability of grout.</li>
+                                    <li>Water and shock resistant.</li>
+                                </ul>
+
+                                <div class="service-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">200 ML</span>
+                                        <span class="stat-label">Packaging Unit</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">MIX</span>
+                                        <span class="stat-label">Colour</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quick-info-card">
+                                <h4>Product Information</h4>
+                                <div class="info-grid">
+                                    <div class="info-row">
+                                        <span class="label">Packaging Unit:</span>
+                                        <span class="value">200 ML</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">Colour:</span>
+                                        <span class="value">Mix</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">Coverage:</span>
+                                        <span class="value">As Per Tile Size</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-action-card">
+                                <h4>Ready to Start?</h4>
+                                <p class="contact-text">Connect With Us</p>
+                                <div class="contact-methods">
+                                    <a href="tel:+15551234567" class="contact-btn">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <span>Call Now</span>
+                                    </a>
+                                    <a href="mailto:admin@gcchemicals.in" class="contact-btn">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span>Email Us</span>
+                                    </a>
+                                </div>
+                                <a href="quote.html" class="btn btn-primary w-100 mt-3">Get Free Estimate</a>
+                            </div>
+                        </div>
+                        <!-- End Service Sidebar -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Project Details Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img height="100" src="assets/img/logo.png" />
+                        <a href="index" class="logo d-flex align-items-center mb-3">
+                            <span class="sitename fw-bold">GC Chemicals</span>
+                        </a>
+                        <p class="tagline">
+                            Building Trust Through Quality Construction Solutions. This is
+                            professional, customer-focused, and clearly communicates your
+                            value proposition.
+                        </p>
+
+                        <div class="social-links mt-4">
+                            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="footer-links-grid">
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <h5>Quick Links</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="/">Home</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/products">Products</a></li>
+                                    <li><a href="/team">Our Team</a></li>
+                                    <li><a href="/contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h5>Services</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="product-details">Epoxy Adhesive</a></li>
+                                    <li><a href="product-details">Block Adhesive</a></li>
+                                    <li><a href="product-details">Tile Cleaners</a></li>
+                                    <li><a href="product-details">Tile Grouting </a></li>
+                                    <li><a href="product-details">Waterproofing</a></li>
+                                    <li><a href="product-details">Maintenance</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h5>Support</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="footer-cta">
+                        <h5>Let's Connect</h5>
+                        <a href="contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-content">
+                            <p class="mb-0">
+                                © <span class="sitename">GC Chemical</span>. All rights
+                                reserved.
+                            </p>
+                            <div class="credits">
+                                Designed by
+                                <a href="https://www.litostindia.in/">Litoust India</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a class="fixed-bottom d-flex justify-content-end" style="bottom: 100px; right: 10px"
+        href="https://wa.me/919334198245" target="_blank">
+        <i
+            class="bi bi-whatsapp bg-success text-white p-3 rounded-circle shadow-lg hover:bg-success hover:scale-105 transition-all duration-300 ease-in-out z-50"></i>
+    </a>
+
+    <!-- Call Floating Button -->
+    <a class="fixed-bottom d-flex justify-content-end" style="bottom: 180px; right: 10px" href="tel:+919334198245"
+        target="_blank">
+        <i
+            class="bi bi-telephone bg-primary text-white p-3 rounded-circle shadow-lg hover:bg-primary hover:scale-105 transition-all duration-300 ease-in-out z-50"></i>
+    </a>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/fresco.min.js"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
