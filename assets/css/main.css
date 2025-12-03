@@ -2003,6 +2003,11 @@ section,
 /*--------------------------------------------------------------
 # Certifications Section
 --------------------------------------------------------------*/
+.bg-smoke {
+    background-color: var(--smoke-color) !important;
+    border-bottom: 3px solid var(--theme-color) !important;
+}
+
 .certifications .content h2 {
   font-size: 2.5rem;
   font-weight: 300;
@@ -2138,6 +2143,8 @@ section,
 .team .team-member {
   background-color: var(--surface-color);
   border-radius: 8px;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px color-mix(in srgb, var(--default-color), transparent 85%);
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
